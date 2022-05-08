@@ -12,10 +12,6 @@ module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
   darkMode: BLOG.appearance === 'auto' ? 'media' : 'class', // or 'media' or 'class'
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
   theme: {
     extend: {
       colors: {
@@ -25,23 +21,23 @@ module.exports = {
         night: {
           DEFAULT: BLOG.darkBackground || '#111827'
         }
+      },
+      fontFamily: {
+        sans: ['"IBM Plex Sans"', ...fontFamily.sans, ...fontSansCJK],
+        serif: ['"Source Serif"', ...fontFamily.serif, ...fontSerifCJK],
+        noEmoji: [
+          '"IBM Plex Sans"',
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'sans-serif'
+        ]
       }
-    },
-    fontFamily: {
-      sans: ['"IBM Plex Sans"', ...fontFamily.sans, ...fontSansCJK],
-      serif: ['"Source Serif"', ...fontFamily.serif, ...fontSerifCJK],
-      noEmoji: [
-        '"IBM Plex Sans"',
-        'ui-sans-serif',
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        'sans-serif'
-      ]
     }
   },
   variants: {
     extend: {}
   },
-  plugins: [],
+  plugins: []
 }
