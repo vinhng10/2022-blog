@@ -27,3 +27,5 @@ const BlogPost = ({ post }) => {
         </Link>
     )
 }
+
+export default BlogPost
