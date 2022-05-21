@@ -98,7 +98,7 @@ const Header = ({ navBarTitle, fullWidth }) => {
                                         </radialGradient>
                                     </defs>
                                 </svg> */}
-                                <strong>C:\Users\Khanh></strong>
+                                <strong>Vinh Blog</strong>
                             </div>
                         </a>
                     </Link>

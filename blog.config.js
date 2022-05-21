@@ -1,7 +1,7 @@
 const BLOG = {
-    title: 'KaoEngine',
-    author: 'Khanh Tran',
-    email: 'tran_khanh@outlook.com',
+    title: 'Vinh Blog',
+    author: 'Vinh Nguyen',
+    email: 'qvinhnguyen17@gmail.com',
     link: 'https://nobelium.vercel.app',
     description: 'This gonna be an awesome place.',
     lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
@@ -17,7 +17,7 @@ const BLOG = {
     showArchive: true,
     autoCollapsedNavBar: false, // The automatically collapsed navigation bar
     ogImageGenerateURL: 'https://og-image.vercel.app/', // The link to generate OG image, don't end with a slash
-    socialLink: 'https://twitter.com/trkhanh8',
+    socialLink: '',
     seo: {
         keywords: ['Blog', 'Website', 'Notion'],
         googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
